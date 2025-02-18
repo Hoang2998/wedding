@@ -894,14 +894,6 @@ form label {
   box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
 }
 
-/* #fh5co-header {
-  background-position:-200 0 !important;
-} */
-
-.test {
-  background-position:0 -300px !important;
-}
-
 #fh5co-counter {
   text-align: center;
 }
@@ -921,9 +913,6 @@ form label {
 @media screen and (max-width: 768px) {
   #fh5co-counter .feature-center {
     margin-bottom: 50px;
-  }
-  .test {
-    background-position:0 0px !important;
   }
 }
 #fh5co-counter .icon {

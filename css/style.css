@@ -69,6 +69,11 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0 0 20px 0;
 }
 
+h3 {
+  font-family: "Playball", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 ::-webkit-selection {
   color: #fff;
   background: #186c50;
@@ -878,7 +883,7 @@ form label {
 #fh5co-counter .display-tc .btn,
 .fh5co-cover .display-tc .btn {
   padding: 15px 20px;
-  background: #186c50 !important;
+  background: #186c5091 !important;
   color: #f4f4f4;
   border: none !important;
   font-size: 14px;
@@ -887,7 +892,7 @@ form label {
 #fh5co-header .display-tc .btn:hover,
 #fh5co-counter .display-tc .btn:hover,
 .fh5co-cover .display-tc .btn:hover {
-  background: #fff !important;
+  background: #ffffff44 !important;
   color: #186c50;
   -webkit-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
   -moz-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
@@ -1014,6 +1019,37 @@ form label {
   #fh5co-gallery,
   .fh5co-section {
     padding: 3em 0;
+  }
+  .simply-countdown > .simply-section {
+    /* coutndown blocks */
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: rgba(101, 221, 167, 0.2);
+    margin: 0 4px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    position: relative;
+    animation: pulse 1s ease infinite;
+  }
+  .simply-countdown > .simply-section > div {
+    /* countdown block inner div */
+    display: table-cell;
+    vertical-align: middle;
+    height: 60px;
+    width: 60px;
+  }
+  .simply-countdown > .simply-section .simply-amount {
+    font-size: 15px;
+    /* amounts */
+  }
+  .simply-countdown > .simply-section .simply-word {
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    font-size: 8px;
+    /* words */
   }
 }
 
@@ -1183,7 +1219,9 @@ form label {
   line-height: 1.5;
   font-weight: bold;
   color: #186c50;
-  font-family: "Sacramento", Arial, serif;
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 @media screen and (max-width: 768px) {
   .fh5co-heading h2 {
@@ -1218,7 +1256,7 @@ form label {
 }
 #fh5co-testimonial .wrap-testimony .testimony-slide span a.twitter {
   color: #186c50;
-  font-weight: 300;
+  font-weight: 500;
 }
 #fh5co-testimonial .wrap-testimony .testimony-slide figure {
   margin-bottom: 10px;
@@ -1232,10 +1270,10 @@ form label {
 #fh5co-testimonial .wrap-testimony .testimony-slide figure img {
   width: 100px;
   height: 100px;
-  -webkit-border-radius: 50%;
+  /* -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
-  border-radius: 50%;
+  border-radius: 50%; */
 }
 #fh5co-testimonial .wrap-testimony .testimony-slide blockquote {
   border: none;
@@ -1375,7 +1413,7 @@ form label {
 #fh5co-started .btn {
   height: 54px;
   border: none !important;
-  background: #186c50;
+  background: #0a5037;
   color: #fff;
   font-size: 16px;
   text-transform: uppercase;
@@ -1420,6 +1458,7 @@ form label {
 .owl-carousel .owl-controls .owl-dot.active span {
   background: transparent;
   border: 2px solid #186c50;
+  background-size: cover;
 }
 
 #fh5co-offcanvas {
